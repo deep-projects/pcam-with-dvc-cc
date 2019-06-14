@@ -38,3 +38,7 @@ cc_0010_kernel_width_5:
   files:
   - .dvc_cc/cc_0010_kernel_width_5/dvc___train_network.dvc.yml
   id: 5d0392da7a9dad233235ad39
+cc_0011_kernel_width_7:
+  files:
+  - .dvc_cc/cc_0011_kernel_width_7/dvc___train_network.dvc.yml
+  id: 5d0392f2c4fbe308a5794a51
