@@ -42,3 +42,7 @@ cc_0011_kernel_width_7:
   files:
   - .dvc_cc/cc_0011_kernel_width_7/dvc___train_network.dvc.yml
   id: 5d0392f2c4fbe308a5794a51
+cc_0012_batch_size_16:
+  files:
+  - .dvc_cc/cc_0012_batch_size_16/dvc___train_network.dvc.yml
+  id: 5d03931fc4fbe308a5794a53
