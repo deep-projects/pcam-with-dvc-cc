@@ -1,0 +1,4 @@
+cc_0001_test_pipeline_on_cc_server:
+  files:
+  - .dvc_cc/cc_0001_test_pipeline_on_cc_server/dvc___train_network.dvc.yml
+  id: 5d02e945c4fbe308a5794a39
