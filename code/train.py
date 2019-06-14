@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser()
 # define the training
 parser.add_argument('-lr', '--learning-rate', type=float, help='', default = 0.1)
 parser.add_argument('-b','--batch-size', type=int, help='', default = 64)
-parser.add_argument('--num-of-epochs', type=int, help='', default = 2)
+parser.add_argument('--num-of-epochs', type=int, help='', default = 100)
 
 # define the model structure
 parser.add_argument('--activation-function', type=str, help='', default = 'relu')
@@ -36,9 +36,6 @@ parser.add_argument('--dropout-factor-after-maxp', type=float, help='', default 
 parser.add_argument('--flip-input', action='store_true')
 parser.add_argument('--normalize-input', action='store_true')
 parser.add_argument('--use-cropping', action='store_true')
-
-validation_steps=20
-steps_per_epoch=100
 
 args = parser.parse_args()
 
