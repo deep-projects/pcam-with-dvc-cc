@@ -26,3 +26,7 @@ cc_0007_maxpool_after_2_cnnlayer:
   files:
   - .dvc_cc/cc_0007_maxpool_after_2_cnnlayer/dvc___train_network.dvc.yml
   id: 5d039202ca2303c2dd1c22a8
+cc_0008_maxpool_after_1_cnnlayer:
+  files:
+  - .dvc_cc/cc_0008_maxpool_after_1_cnnlayer/dvc___train_network.dvc.yml
+  id: 5d03921841d60708214ccb59
