@@ -2,23 +2,32 @@ cmd: python code/train.py -lr 0.0001 --maxpool-after-n-layer 1
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
+  md5: 01844da899645b4d6f84946d417ba453
 - path: data/camelyonpatch_level_2_split_train_y.h5
+  md5: 0781386bf6c2fb62d58ff18891466aca
 - path: data/camelyonpatch_level_2_split_valid_x.h5
+  md5: 81cf9680f1724c40673f10dc88e909b1
 - path: data/camelyonpatch_level_2_split_valid_y.h5
+  md5: 94d8aacc249253159ce2a2e78a86e658
 outs:
 - path: tf_models/tf_model.h5
   cache: true
   metric: false
   persist: false
+  md5: 8c3df668078ef28a8fbf6cb1856746e6
 - path: tensorboards/tb
   cache: true
   metric: false
   persist: false
+  md5: 2c15ded1a90431ca3dc07ba54a35737d.dir
 - path: outputs/all-history.json
   cache: true
   metric: false
   persist: false
+  md5: 214b7c0f6cece44fd1d6d9df530aa323
 - path: outputs/history-summary.json
   cache: true
   metric: true
   persist: false
+  md5: 246d9d12d220103a0374d809abb598a4
+md5: 48126f8c0994c5f65f4c6984c394652c
