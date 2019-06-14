@@ -10,3 +10,7 @@ cc_0003_lr_0.1:
   files:
   - .dvc_cc/cc_0003_lr_0.1/dvc___train_network.dvc.yml
   id: 5d02f104c4fbe308a5794a3d
+cc_0004_lr_0.05:
+  files:
+  - .dvc_cc/cc_0004_lr_0.05/dvc___train_network.dvc.yml
+  id: 5d02f117c4fbe308a5794a3f
