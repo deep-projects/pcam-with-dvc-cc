@@ -22,3 +22,7 @@ cc_0006_lr_0.0001:
   files:
   - .dvc_cc/cc_0006_lr_0.0001/dvc___train_network.dvc.yml
   id: 5d037d6ac4fbe308a5794a49
+cc_0007_maxpool_after_2_cnnlayer:
+  files:
+  - .dvc_cc/cc_0007_maxpool_after_2_cnnlayer/dvc___train_network.dvc.yml
+  id: 5d039202ca2303c2dd1c22a8
