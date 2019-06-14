@@ -46,3 +46,7 @@ cc_0012_batch_size_16:
   files:
   - .dvc_cc/cc_0012_batch_size_16/dvc___train_network.dvc.yml
   id: 5d03931fc4fbe308a5794a53
+cc_0013_batch_size_256:
+  files:
+  - .dvc_cc/cc_0013_batch_size_256/dvc___train_network.dvc.yml
+  id: 5d03933cc4fbe308a5794a55
