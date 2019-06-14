@@ -1,0 +1,5 @@
+['remote "dvc_connection"']
+url = ssh://annusch@avocado01.f4.htw-berlin.de/data/ldap/jonas/pcam_with_dvc_cc
+ask_password = true
+[core]
+remote = dvc_connection
