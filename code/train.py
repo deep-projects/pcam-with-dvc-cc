@@ -14,6 +14,8 @@ from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D,
 from tensorflow.keras.layers import GlobalAveragePooling2D
 import argparse
 
+print('Tensorflow runs on the GPU: ', tf.test.is_gpu_available())
+
 parser = argparse.ArgumentParser()
 
 # define the training
