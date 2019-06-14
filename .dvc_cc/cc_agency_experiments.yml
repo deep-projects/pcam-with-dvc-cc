@@ -34,3 +34,7 @@ cc_0009_maxpool_without:
   files:
   - .dvc_cc/cc_0009_maxpool_without/dvc___train_network.dvc.yml
   id: 5d039258ca2303c2dd1c22aa
+cc_0010_kernel_width_5:
+  files:
+  - .dvc_cc/cc_0010_kernel_width_5/dvc___train_network.dvc.yml
+  id: 5d0392da7a9dad233235ad39
