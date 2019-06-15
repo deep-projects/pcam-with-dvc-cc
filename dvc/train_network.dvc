@@ -2,23 +2,32 @@ cmd: python code/train.py -lr 0.0001 --num-of-preprocesses 16 --num-of-epochs 50
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
+  md5: 01844da899645b4d6f84946d417ba453
 - path: data/camelyonpatch_level_2_split_train_y.h5
+  md5: 0781386bf6c2fb62d58ff18891466aca
 - path: data/camelyonpatch_level_2_split_valid_x.h5
+  md5: 81cf9680f1724c40673f10dc88e909b1
 - path: data/camelyonpatch_level_2_split_valid_y.h5
+  md5: 94d8aacc249253159ce2a2e78a86e658
 outs:
 - path: tf_models/tf_model.h5
   cache: true
   metric: false
   persist: false
+  md5: 4c24c5c070663b0343751873cae44be8
 - path: tensorboards/tb
   cache: true
   metric: false
   persist: false
+  md5: 641d17865a2dacdc044b3a1c0eb42e6b.dir
 - path: outputs/all-history.json
   cache: true
   metric: false
   persist: false
+  md5: 8f9106563e8756775b6dd273192e2a56
 - path: outputs/history-summary.json
   cache: true
   metric: true
   persist: false
+  md5: f60331e8b92ffdd271be041cad3a3a08
+md5: f4c05b29a1a8f65df645330abde4e643
