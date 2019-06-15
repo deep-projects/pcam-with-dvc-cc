@@ -137,3 +137,7 @@ cc_0031_run500epochs:
   files:
   - .dvc_cc/cc_0031_run500epochs/dvc___train_network.dvc.yml
   id: 5d053afc41d60708214ccb64
+cc_0032_run5000epochs:
+  files:
+  - .dvc_cc/cc_0032_run5000epochs/dvc___train_network.dvc.yml
+  id: 5d056f017a9dad233235ad47
