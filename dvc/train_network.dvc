@@ -1,4 +1,4 @@
-cmd: python code/train.py -lr 0.0001 --num-of-preprocesses 12
+cmd: python code/train.py -lr 0.0001 --num-of-preprocesses 20
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
