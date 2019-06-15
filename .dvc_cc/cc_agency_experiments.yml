@@ -50,3 +50,7 @@ cc_0013_batch_size_256:
   files:
   - .dvc_cc/cc_0013_batch_size_256/dvc___train_network.dvc.yml
   id: 5d03933cc4fbe308a5794a55
+cc_0014_speed_test_1_worker:
+  files:
+  - .dvc_cc/cc_0014_speed_test_1_worker/dvc___train_network.dvc.yml
+  id: null
