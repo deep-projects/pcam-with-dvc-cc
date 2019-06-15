@@ -113,3 +113,8 @@ cc_0026_speed_test_32_workers:
   - .dvc_cc/cc_0026_speed_test_32_workers/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0026_speed_test_32_workers/dvc___train_network.dvc.yml
   id: 5d04fbd541d60708214ccb5e
+cc_0027_speed_test_40_workers:
+  files:
+  - .dvc_cc/cc_0027_speed_test_40_workers/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0027_speed_test_40_workers/dvc___train_network.dvc.yml
+  id: 5d04fbfac4fbe308a5794a64
