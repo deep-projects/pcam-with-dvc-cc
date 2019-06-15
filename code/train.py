@@ -7,7 +7,8 @@ import json
 import os
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras.utils import HDF5Matrix
+#from tensorflow.keras.utils import HDF5Matrix
+import h5py
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
@@ -38,16 +39,9 @@ parser.add_argument('--dropout-factor-after-maxp', type=float, help='', default 
 parser.add_argument('--flip-input', action='store_true')
 parser.add_argument('--normalize-input', action='store_true')
 parser.add_argument('--use-cropping', action='store_true')
+parser.add_argument('--num-of-preprocesses', type=int, help='', default = 3)
 
 args = parser.parse_args()
-
-
-# Load the dataset:
-x_train = HDF5Matrix('data/camelyonpatch_level_2_split_train_x.h5', 'x')
-y_train = HDF5Matrix('data/camelyonpatch_level_2_split_train_y.h5', 'y')
-x_valid = HDF5Matrix('data/camelyonpatch_level_2_split_valid_x.h5', 'x')
-y_valid = HDF5Matrix('data/camelyonpatch_level_2_split_valid_y.h5', 'y')
-
 
 # define the model
 if args.use_same_padding:
@@ -64,7 +58,7 @@ for i in range(args.num_of_conv_layers):
     kernels = int(kernels+0.5)
     
     if i == 0:
-        input_shape = list(x_train.shape[1:])
+        input_shape = list([96,96,3])
         if args.use_cropping:
             input_shape[0] -= 10
             input_shape[1] -= 10 
@@ -97,12 +91,17 @@ model.summary()
 
 
 # data loader
-def next_data_pcam(x,y,bz=args.batch_size):
+def next_data_pcam(x_path,y_path,bz=args.batch_size):
+    x = h5py.File(x_path,'r', libver='latest',swmr=True)['x']
+    y = h5py.File(y_path,'r', libver='latest', swmr=True)['y']
+    #x = HDF5Matrix(x_path, 'x')
+    #y = HDF5Matrix(y_path, 'y')
+
     datalen = len(x)
     while True:
         indizies = None
         while indizies is None or len(indizies) == bz:
-            indizies = np.unique(sorted(np.random.randint(datalen,size=bz)))
+            indizies = list(np.unique(sorted(np.random.randint(datalen,size=bz))))
         
         x_data = np.array(x[indizies])
         if args.normalize_input:
@@ -126,12 +125,12 @@ if not os.path.exists('tensorboards'):
     os.mkdir('tensorboards')
 
 tensorboard = tf.keras.callbacks.TensorBoard('tensorboards/tb')
-history = model.fit_generator(next_data_pcam(x_train, y_train),
+history = model.fit_generator(next_data_pcam('data/camelyonpatch_level_2_split_train_x.h5', 'data/camelyonpatch_level_2_split_train_y.h5'),
                         validation_steps=10,
                         steps_per_epoch=100,
                         epochs=args.num_of_epochs,
-                        validation_data=next_data_pcam(x_valid, y_valid),
-                        workers=1, verbose=2,
+                        validation_data=next_data_pcam('data/camelyonpatch_level_2_split_valid_x.h5', 'data/camelyonpatch_level_2_split_valid_y.h5'),
+                        workers=args.num_of_preprocesses, verbose=2,use_multiprocessing=True,
                         callbacks=[tensorboard])
 
 if not os.path.exists('tf_models'):
