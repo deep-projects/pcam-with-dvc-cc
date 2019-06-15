@@ -73,7 +73,7 @@ container:
         password: '{{cbmi_password}}'
         username: '{{cbmi_username}}'
       url: dckr.f4.htw-berlin.de/deepprojects/dvc_repro_starter_tf2.alpha:dev
-    ram: 200000
+    ram: 150000
 execution:
   engine: ccagency
   settings:
