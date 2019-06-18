@@ -2,24 +2,34 @@ cmd: python code/train.py --normalize-input
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
+  md5: 01844da899645b4d6f84946d417ba453
 - path: data/camelyonpatch_level_2_split_train_y.h5
+  md5: 0781386bf6c2fb62d58ff18891466aca
 - path: data/camelyonpatch_level_2_split_valid_x.h5
+  md5: 81cf9680f1724c40673f10dc88e909b1
 - path: data/camelyonpatch_level_2_split_valid_y.h5
+  md5: 94d8aacc249253159ce2a2e78a86e658
 - path: code/train.py
+  md5: f21bf9f75dd63c04e605feca1fbf1e94
 outs:
 - path: tf_models/tf_model.h5
   cache: true
   metric: false
   persist: false
+  md5: 9630f4645872a34c7e34c5fbf1e600f5
 - path: tensorboards/tb
   cache: true
   metric: false
   persist: false
+  md5: 3d361705ddeb9c208fce7e1f0c64f4a3.dir
 - path: outputs/all-history.json
   cache: true
   metric: false
   persist: false
+  md5: c9b88f57a2020fab72862afab1714e1b
 - path: outputs/history-summary.json
   cache: true
   metric: true
   persist: false
+  md5: 90dadbda3985f824cffcb505403eadf4
+md5: dab3cbb6d9066f8d194a2edb284cd3b6
