@@ -2,24 +2,34 @@ cmd: python code/train.py --use-cropping --flip-input --normalize-input -lr 0.05
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
+  md5: 01844da899645b4d6f84946d417ba453
 - path: data/camelyonpatch_level_2_split_train_y.h5
+  md5: 0781386bf6c2fb62d58ff18891466aca
 - path: data/camelyonpatch_level_2_split_valid_x.h5
+  md5: 81cf9680f1724c40673f10dc88e909b1
 - path: data/camelyonpatch_level_2_split_valid_y.h5
+  md5: 94d8aacc249253159ce2a2e78a86e658
 - path: code/train.py
+  md5: f21bf9f75dd63c04e605feca1fbf1e94
 outs:
 - path: tf_models/tf_model.h5
   cache: true
   metric: false
   persist: false
+  md5: 93e8e7464ba18e516a45be0c3ff998bd
 - path: tensorboards/tb
   cache: true
   metric: false
   persist: false
+  md5: 537d5c63dbc9366b502e1c6308f623d2.dir
 - path: outputs/all-history.json
   cache: true
   metric: false
   persist: false
+  md5: 31c1d17a00d99254bd3123aeed1a538d
 - path: outputs/history-summary.json
   cache: true
   metric: true
   persist: false
+  md5: 15620f9a3215cd363c796e3aa67067b3
+md5: f67b3e3c747ef97c6a3d1e41c90db003
