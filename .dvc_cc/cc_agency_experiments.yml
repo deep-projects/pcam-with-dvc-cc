@@ -147,3 +147,10 @@ cc_0033_run5000epochs:
   - .dvc_cc/cc_0033_run5000epochs/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0033_run5000epochs/dvc___train_network.dvc.yml
   id: 5d056f16ca2303c2dd1c22b2
+cc_0034_reference_setting:
+  files:
+  - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
+  id: 5d08f1f6361b9d8295dd8a7e
