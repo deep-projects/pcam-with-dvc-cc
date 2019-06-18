@@ -154,3 +154,10 @@ cc_0034_reference_setting:
   - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0034_reference_setting/dvc___train_network.dvc.yml
   id: 5d08f1f6361b9d8295dd8a7e
+cc_0035_preprocess_flip_input:
+  files:
+  - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
+  id: 5d08f241ad229c18679a3e66
