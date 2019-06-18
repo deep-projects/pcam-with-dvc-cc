@@ -1,10 +1,11 @@
-cmd: python code/train.py -lr 0.0001 --num-of-preprocesses 16 --num-of-epochs 5000
+cmd: python code/train.py
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
 - path: data/camelyonpatch_level_2_split_train_y.h5
 - path: data/camelyonpatch_level_2_split_valid_x.h5
 - path: data/camelyonpatch_level_2_split_valid_y.h5
+- path: code/train.py
 outs:
 - path: tf_models/tf_model.h5
   cache: true
