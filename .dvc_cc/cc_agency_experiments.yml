@@ -172,3 +172,10 @@ cc_0037_preprocess_normalize_input:
   - .dvc_cc/cc_0037_preprocess_normalize_input/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0037_preprocess_normalize_input/dvc___train_network.dvc.yml
   id: 5d08f2bfc961fbf37b48723b
+cc_0038_preprocess_normalize_input_with_higher_lr:
+  files:
+  - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
+  id: 5d08f2f7c961fbf37b487240
