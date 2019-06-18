@@ -193,3 +193,10 @@ cc_0040_preprocess_all:
   - .dvc_cc/cc_0040_preprocess_all/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0040_preprocess_all/dvc___train_network.dvc.yml
   id: 5d08f35b90fd6bdbbf687059
+cc_0041_preprocess_all_with_higher_lr:
+  files:
+  - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
+  id: 5d08f37fc961fbf37b487245
