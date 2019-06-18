@@ -161,3 +161,7 @@ cc_0035_preprocess_flip_input:
   - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0035_preprocess_flip_input/dvc___train_network.dvc.yml
   id: 5d08f241ad229c18679a3e66
+cc_0036_preprocess_normalize_input:
+  files:
+  - .dvc_cc/cc_0036_preprocess_normalize_input/dvc___train_network.dvc.yml
+  id: null
