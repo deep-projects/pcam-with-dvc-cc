@@ -179,3 +179,10 @@ cc_0038_preprocess_normalize_input_with_higher_lr:
   - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0038_preprocess_normalize_input_with_higher_lr/dvc___train_network.dvc.yml
   id: 5d08f2f7c961fbf37b487240
+cc_0039_preprocess_use_cropping:
+  files:
+  - .dvc_cc/cc_0039_preprocess_use_cropping/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0039_preprocess_use_cropping/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0039_preprocess_use_cropping/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0039_preprocess_use_cropping/dvc___train_network.dvc.yml
+  id: 5d08f32a90fd6bdbbf687054
