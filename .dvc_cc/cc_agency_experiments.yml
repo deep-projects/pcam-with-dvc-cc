@@ -207,3 +207,10 @@ cc_0042_reference_run_more_validationsteps:
   - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
   id: 5d0a0baec961fbf37b487250
+cc_0043_average_ks_64:
+  files:
+  - .dvc_cc/cc_0043_average_ks_64/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0043_average_ks_64/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0043_average_ks_64/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0043_average_ks_64/dvc___train_network.dvc.yml
+  id: 5d0a0bfb361b9d8295dd8a86
