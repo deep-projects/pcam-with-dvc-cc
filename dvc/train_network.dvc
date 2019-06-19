@@ -1,4 +1,4 @@
-cmd: python code/train.py
+cmd: python code/train.py --average-kernels 64
 wdir: ..
 deps:
 - path: data/camelyonpatch_level_2_split_train_x.h5
