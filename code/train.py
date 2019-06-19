@@ -126,7 +126,7 @@ if not os.path.exists('tensorboards'):
 
 tensorboard = tf.keras.callbacks.TensorBoard('tensorboards/tb')
 history = model.fit_generator(next_data_pcam('data/camelyonpatch_level_2_split_train_x.h5', 'data/camelyonpatch_level_2_split_train_y.h5'),
-                        validation_steps=10,
+                        validation_steps=20,
                         steps_per_epoch=100,
                         epochs=args.num_of_epochs,
                         validation_data=next_data_pcam('data/camelyonpatch_level_2_split_valid_x.h5', 'data/camelyonpatch_level_2_split_valid_y.h5'),
