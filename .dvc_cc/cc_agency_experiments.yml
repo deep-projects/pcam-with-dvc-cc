@@ -228,3 +228,10 @@ cc_0045_average_ks_256:
   - .dvc_cc/cc_0045_average_ks_256/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0045_average_ks_256/dvc___train_network.dvc.yml
   id: 5d0a0c35361b9d8295dd8a90
+cc_0046_average_ks_512:
+  files:
+  - .dvc_cc/cc_0046_average_ks_512/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0046_average_ks_512/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0046_average_ks_512/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0046_average_ks_512/dvc___train_network.dvc.yml
+  id: 5d0a0c4b90fd6bdbbf68705e
