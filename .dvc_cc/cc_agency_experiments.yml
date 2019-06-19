@@ -200,3 +200,10 @@ cc_0041_preprocess_all_with_higher_lr:
   - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
   - .dvc_cc/cc_0041_preprocess_all_with_higher_lr/dvc___train_network.dvc.yml
   id: 5d08f37fc961fbf37b487245
+cc_0042_reference_run_more_validationsteps:
+  files:
+  - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
+  - .dvc_cc/cc_0042_reference_run_more_validationsteps/dvc___train_network.dvc.yml
+  id: 5d0a0baec961fbf37b487250
